@@ -149,19 +149,19 @@
 
     <i class="uk-icon-phone"></i>
 </a>
-<script src='<?php echo SITE_ROOT ?>js/owl.carousel.min.js?1524124143478' type='text/javascript'></script> 
-<script src='<?php echo SITE_ROOT ?>js/jquery.mmenu.all.min.js?1524124143478' type='text/javascript'></script> 
-<script src='<?php echo SITE_ROOT ?>js/jquery.mousewheel-3.0.6.pack.js?1524124143478' type='text/javascript'></script> 
-<script src='<?php echo SITE_ROOT ?>js/jquery.fancybox.pack.js?1524124143478' type='text/javascript'></script> 
-<script src='<?php echo SITE_ROOT ?>js/jquery.fakecrop.js?1524124143478' type='text/javascript'></script> 
-<script src='<?php echo SITE_ROOT ?>js/hammer.min.js?1524124143478' type='text/javascript'></script> 
-<script src='//bizweb.dktcdn.net/assets/themes_support/api.jquery.js?4' type='text/javascript'></script>
-<script src='<?php echo SITE_ROOT ?>js/cs.script.js?1524124143478' type='text/javascript'></script>
-<script src='//bizweb.dktcdn.net/assets/themes_support/option-selectors.js?4' type='text/javascript'></script>
-<script src='<?php echo SITE_ROOT ?>js/scripts.js?1524124143478' type='text/javascript'></script>
+<script src='<?php echo get_template_directory_uri() ?>/js/owl.carousel.min.js?1524124143478' type='text/javascript'></script> 
+<script src='<?php echo get_template_directory_uri() ?>/js/jquery.mmenu.all.min.js?1524124143478' type='text/javascript'></script> 
+<script src='<?php echo get_template_directory_uri() ?>/js/jquery.mousewheel-3.0.6.pack.js?1524124143478' type='text/javascript'></script> 
+<script src='<?php echo get_template_directory_uri() ?>/js/jquery.fancybox.pack.js?1524124143478' type='text/javascript'></script> 
+<script src='<?php echo get_template_directory_uri() ?>/js/jquery.fakecrop.js?1524124143478' type='text/javascript'></script> 
+<!--<script src='<?php echo get_template_directory_uri() ?>/js/hammer.min.js?1524124143478' type='text/javascript'></script>--> 
+<!--<script src='//bizweb.dktcdn.net/assets/themes_support/api.jquery.js?4' type='text/javascript'></script>-->
+<!--<script src='<?php echo get_template_directory_uri() ?>/js/cs.script.js?1524124143478' type='text/javascript'></script>-->
+<!--<script src='//bizweb.dktcdn.net/assets/themes_support/option-selectors.js?4' type='text/javascript'></script>-->
+<script src='<?php echo get_template_directory_uri() ?>/js/scripts.js?1524124143478' type='text/javascript'></script>
 
 </div>
 </div>
-
+<?php wp_footer() ?>
 </body>
 </html>

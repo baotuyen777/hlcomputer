@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
 <?php
-define('SITE_ROOT', 'http://hoidev.com/hlcomputer/')
-//define('SITE_ROOT', 'http://localhost/hlcomputer/')
+//define('get_template_directory_uri()', 'http://hoidev.com/hlcomputer/')
+//define('get_template_directory_uri()', 'http://localhost/hlcomputer/')
 ?>
 <html lang="vi">
 
@@ -26,28 +26,29 @@ define('SITE_ROOT', 'http://hoidev.com/hlcomputer/')
 
         <meta property="og:url" content="http://hlcomputer.vn">
         <meta property="og:site_name" content="Hlcomputer">
-        <link rel="shortcut icon" href="<?php echo SITE_ROOT ?>js/favicon.png?1524124143478" type="image/x-icon" />
-        <script src='<?php echo SITE_ROOT ?>js/jquery-2.2.4.min.js?1524124143478' type='text/javascript'></script> 
-        <script src='<?php echo SITE_ROOT ?>js/bootstrap.min.js?1524124143478' type='text/javascript'></script> 
+        <?php wp_head() ?>
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/js/favicon.png?1524124143478" type="image/x-icon" />
+        <script src='<?php echo get_template_directory_uri() ?>/js/jquery-2.2.4.min.js?1524124143478' type='text/javascript'></script> 
+        <script src='<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js?1524124143478' type='text/javascript'></script> 
 
-        <script src='<?php echo SITE_ROOT ?>js/jquery.bxslider.min.js?1524124143478' type='text/javascript'></script>
-        <script src='<?php echo SITE_ROOT ?>js/cloudzoom.js?1524124143478' type='text/javascript'></script>  
-        <link href='<?php echo SITE_ROOT ?>css/bootstrap.min.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/font-awesome.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/normalize.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/typography.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/owl.carousel.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/jquery.mmenu.all.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/jquery.fancybox.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/swatch.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/swatch-color.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/jquery.bxslider.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/cloudzoom.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/styles.css' rel='stylesheet' type='text/css' />
-        <link href='<?php echo SITE_ROOT ?>css/cf-stylesheet.css?1524124143478' rel='stylesheet' type='text/css' />
+        <script src='<?php echo get_template_directory_uri() ?>/js/jquery.bxslider.min.js?1524124143478' type='text/javascript'></script>
+        <script src='<?php echo get_template_directory_uri() ?>/js/cloudzoom.js?1524124143478' type='text/javascript'></script>  
+        <link href='<?php echo get_template_directory_uri() ?>/css/bootstrap.min.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/font-awesome.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/normalize.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/typography.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/owl.carousel.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/jquery.mmenu.all.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/jquery.fancybox.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/swatch.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/swatch-color.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/jquery.bxslider.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/cloudzoom.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/styles.css' rel='stylesheet' type='text/css' />
+        <link href='<?php echo get_template_directory_uri() ?>/css/cf-stylesheet.css?1524124143478' rel='stylesheet' type='text/css' />
 
-        <script src='<?php echo SITE_ROOT ?>js/jquery.nivo.slider.pack.js?1524124143478' type='text/javascript'></script> 
-        <link href='<?php echo SITE_ROOT ?>css/nivo-slider.scss.css?1524124143478' rel='stylesheet' type='text/css' />
+        <script src='<?php echo get_template_directory_uri() ?>/js/jquery.nivo.slider.pack.js?1524124143478' type='text/javascript'></script> 
+        <link href='<?php echo get_template_directory_uri() ?>/css/nivo-slider.scss.css?1524124143478' rel='stylesheet' type='text/css' />
         <script type="text/javascript">
             jQuery(document).ready(function ($) {
                 if ("ontouchstart" in document.documentElement) {
@@ -138,14 +139,14 @@ define('SITE_ROOT', 'http://hoidev.com/hlcomputer/')
                         </div>
                     </div>
                 </section>
-                <a href="/"  class="hidden"><img style="width: 100%" src="<?php echo SITE_ROOT ?>img/bannertop.png?1524124143478" /></a>
+                <a href="/"  class="hidden"><img style="width: 100%" src="<?php echo get_template_directory_uri() ?>/img/bannertop.png?1524124143478" /></a>
                 <header id="header" class="header">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3 col-sm-3 col-xs-6 header__logo">
                                 <a title="Hlcomputer" href="/">
 
-                                    <img alt="Hlcomputer" src="<?php echo SITE_ROOT ?>img/logo.png?1524124143478">
+                                    <img alt="Hlcomputer" src="<?php echo get_template_directory_uri() ?>/img/logo.png?1524124143478">
 
                                 </a> 
                             </div>
@@ -179,74 +180,82 @@ define('SITE_ROOT', 'http://hoidev.com/hlcomputer/')
                             <input type="text" placeholder="Nhập nội dung tìm kiếm" id="search-mobile" value="" maxlength="70" class="input input__search" name="query">
                             <button class="button" type="submit" aria-label="Tìm kiếm"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </form>
-                        <ul class="menu__list hidden-xs">
-
-
-                            <li class="menu__item"><a href="/" class="menu__link">Trang chủ</a></li>
-
-
-
-                            <li class="menu__item"><a href="/gioi-thieu" class="menu__link">Giới thiệu</a></li>
-
-
-
-                            <li class="menu__item">
-                                <a href="/danh-muc-laptop" class="menu__link">Danh mục Laptop <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="menu-sub">
-
-                                    <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Laptop Dell</a></li>
-
-
-
-                                    <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Laptop Asus</a></li>
-
-
-
-                                    <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Laptop HP</a></li>
-
-
-
-                                    <li class="menu-sub__item"><a href="/laptop-lenovo" class="menu-sub__link">Laptop Lenovo</a></li>
-
-
-
-                                    <li class="menu-sub__item"><a href="/laptop-acer" class="menu-sub__link">Laptop Acer</a></li>
-
-
-
-                                    <li class="menu-sub__item"><a href="/laptop-toshiba" class="menu-sub__link">Laptop Toshiba</a></li>
-
-
-                                </ul>
-                            </li>
-
-
-
-                            <li class="menu__item"><a href="/laptop-game-do-hoa" class="menu__link">Laptop Game & Đồ Họa</a></li>
-
-
-
-                            <li class="menu__item"><a href="/macbook" class="menu__link">Macbook</a></li>
-
-
-
-                            <li class="menu__item"><a href="/linh-kien-laptop" class="menu__link">Linh Kiện - Thiết bị <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="menu-sub">
-                                    <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Linh Kiện máy tính <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                        <ul class="menu-sub">
-                                            <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Loa máy tính</a></li>
-                                            <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Chuột</a></li>
-                                            <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Các thiết bị tản nhiệt</a></li>
-                                            <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Các thiết bị lưu trữ</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Camera an ninh</a></li>
-                                    <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Thiết bị mạng</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu__item"><a href="/tin-tuc" class="menu__link">Tin tức</a></li>
-                            <li class="menu__item"><a href="/lien-he" class="menu__link">Liên hệ</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu(array(
+                            'container_class' => 'rd-navbar-nav-inner',
+                            'menu_class' => 'menu__list hidden-xs',
+                            'container' => 'ul',
+                            'theme_location' => 'main-menu'
+                        ))
+                        ?>
+                        <!--                                                <ul class="menu__list hidden-xs">
+                                                
+                                                
+                                                                            <li class="menu__item"><a href="/" class="menu__link">Trang chủ</a></li>
+                                                
+                                                
+                                                
+                                                                            <li class="menu__item"><a href="/gioi-thieu" class="menu__link">Giới thiệu</a></li>
+                                                
+                                                
+                                                
+                                                                            <li class="menu__item">
+                                                                                <a href="/danh-muc-laptop" class="menu__link">Danh mục Laptop <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                                                <ul class="menu-sub">
+                                                
+                                                                                    <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Laptop Dell</a></li>
+                                                
+                                                
+                                                
+                                                                                    <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Laptop Asus</a></li>
+                                                
+                                                
+                                                
+                                                                                    <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Laptop HP</a></li>
+                                                
+                                                
+                                                
+                                                                                    <li class="menu-sub__item"><a href="/laptop-lenovo" class="menu-sub__link">Laptop Lenovo</a></li>
+                                                
+                                                
+                                                
+                                                                                    <li class="menu-sub__item"><a href="/laptop-acer" class="menu-sub__link">Laptop Acer</a></li>
+                                                
+                                                
+                                                
+                                                                                    <li class="menu-sub__item"><a href="/laptop-toshiba" class="menu-sub__link">Laptop Toshiba</a></li>
+                                                
+                                                
+                                                                                </ul>
+                                                                            </li>
+                                                
+                                                
+                                                
+                                                                            <li class="menu__item"><a href="/laptop-game-do-hoa" class="menu__link">Laptop Game & Đồ Họa</a></li>
+                                                
+                                                
+                                                
+                                                                            <li class="menu__item"><a href="/macbook" class="menu__link">Macbook</a></li>
+                                                
+                                                
+                                                
+                                                                            <li class="menu__item"><a href="/linh-kien-laptop" class="menu__link">Linh Kiện - Thiết bị <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                                                <ul class="menu-sub">
+                                                                                    <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Linh Kiện máy tính <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                                                        <ul class="menu-sub">
+                                                                                            <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Loa máy tính</a></li>
+                                                                                            <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Chuột</a></li>
+                                                                                            <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Các thiết bị tản nhiệt</a></li>
+                                                                                            <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Các thiết bị lưu trữ</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Camera an ninh</a></li>
+                                                                                    <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Thiết bị mạng</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li class="menu__item"><a href="/tin-tuc" class="menu__link">Tin tức</a></li>
+                                                                            <li class="menu__item"><a href="/lien-he" class="menu__link">Liên hệ</a></li>
+                                                                        </ul>-->
                     </div>
                 </nav>
                 <div class="hidden">

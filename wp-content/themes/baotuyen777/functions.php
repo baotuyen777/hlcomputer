@@ -8,13 +8,13 @@ require (THEME_PATH . "/theme_config.php");
 register_nav_menus(
         array(
             'main-menu' => __('Main Menu'),
-            'extra-menu' => __('Extra Menu'),
+            'sidebar-menu' => __('Extra Menu'),
             'mobile' => __('Mobile Menu'),
 //                'footer' => __('Footer Menu')
         )
 );
-add_image_size('product-thumb', 370, 310, true);
-add_image_size('home_blog',770,330,true);
+add_image_size('product-thumb', 160, 160, true);
+//add_image_size('home_blog',770,330,true);
 
 function david_pagination($pages = '', $range = 2) {
     $showitems = ($range * 2) + 1;
