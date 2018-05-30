@@ -45,84 +45,15 @@
         <link href='<?php echo get_template_directory_uri() ?>/css/jquery.bxslider.scss.css?1524124143478' rel='stylesheet' type='text/css' />
         <link href='<?php echo get_template_directory_uri() ?>/css/cloudzoom.scss.css?1524124143478' rel='stylesheet' type='text/css' />
         <link href='<?php echo get_template_directory_uri() ?>/css/styles.css' rel='stylesheet' type='text/css' />
-        <link href='<?php echo get_template_directory_uri() ?>/css/cf-stylesheet.css?1524124143478' rel='stylesheet' type='text/css' />
+        <!--<link href='<?php echo get_template_directory_uri() ?>/css/cf-stylesheet.css?1524124143478' rel='stylesheet' type='text/css' />-->
 
         <script src='<?php echo get_template_directory_uri() ?>/js/jquery.nivo.slider.pack.js?1524124143478' type='text/javascript'></script> 
         <link href='<?php echo get_template_directory_uri() ?>/css/nivo-slider.scss.css?1524124143478' rel='stylesheet' type='text/css' />
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             jQuery(document).ready(function ($) {
-                if ("ontouchstart" in document.documentElement) {
-                    $('#slider').nivoSlider({
-                        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
-                        slices: 15, // For slice animations
-                        boxCols: 8, // For box animations
-                        boxRows: 4, // For box animations
-                        animSpeed: 500, // Slide transition speed
-                        pauseTime: 3000, // How long each slide will show
-                        startSlide: 3, // Set starting Slide (0 index)
-                        directionNav: true, // Next & Prev navigation
-                        directionNavHide: true, // Only show on hover
-                        controlNav: false, // 1,2,3... navigation
-                        controlNavThumbs: false, // Use thumbnails for Control Nav
-                        controlNavThumbsFromRel: false, // Use image rel for thumbs
-                        controlNavThumbsSearch: '', // Replace this with...
-                        controlNavThumbsReplace: '', // ...this in thumb Image src
-                        keyboardNav: true, // Use left & right arrows
-                        pauseOnHover: true, // Stop animation while hovering
-                        manualAdvance: false, // Force manual transitions
-                        captionOpacity: 0.8, // Universal caption opacity
-                        prevText: 'Prev', // Prev directionNav text
-                        nextText: 'Next', // Next directionNav text
-                        beforeChange: function () {}, // Triggers before a slide transition
-                        afterChange: function () {}, // Triggers after a slide transition
-                        slideshowEnd: function () {}, // Triggers after all slides have been shown
-                        lastSlide: function () {}, // Triggers when last slide is shown
-                        afterLoad: function () {} // Triggers when slider has loaded
-                    });
-                    var element = document.getElementById('slider');
-                    var hammertime = Hammer(element).on("swipeleft", function (event) {
-                        $('#slider img').attr("data-transition", "slideInLeft");
-                        $('a.nivo-nextNav').trigger('click');
-                        return false;
-                    });
-                    var hammertime = Hammer(element).on("swiperight", function (event) {
-                        $('#slider img').attr("data-transition", "slideInRight");
-                        $('a.nivo-prevNav').trigger('click');
-                        $('#slider img').attr("data-transition", "slideInLeft");
-                        return false;
-
-                    });
-                } else {
-                    $('#slider').nivoSlider({
-                        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
-                        slices: 15, // For slice animations
-                        boxCols: 8, // For box animations
-                        boxRows: 4, // For box animations
-                        animSpeed: 500, // Slide transition speed
-                        pauseTime: 3000, // How long each slide will show
-                        startSlide: 0, // Set starting Slide (0 index)
-                        directionNav: true, // Next & Prev navigation
-                        directionNavHide: true, // Only show on hover
-                        controlNav: false, // 1,2,3... navigation
-                        controlNavThumbs: false, // Use thumbnails for Control Nav
-                        controlNavThumbsFromRel: false, // Use image rel for thumbs
-                        controlNavThumbsSearch: '', // Replace this with...
-                        controlNavThumbsReplace: '', // ...this in thumb Image src
-                        keyboardNav: true, // Use left & right arrows
-                        pauseOnHover: true, // Stop animation while hovering
-                        manualAdvance: false, // Force manual transitions
-                        captionOpacity: 0.8, // Universal caption opacity
-                        prevText: 'Prev', // Prev directionNav text
-                        nextText: 'Next', // Next directionNav text
-                        beforeChange: function () {}, // Triggers before a slide transition
-                        afterChange: function () {}, // Triggers after a slide transition
-                        slideshowEnd: function () {}, // Triggers after all slides have been shown
-                        lastSlide: function () {}, // Triggers when last slide is shown
-                        afterLoad: function () {} // Triggers when slider has loaded
-                    });
-                }
+                
             });
-        </script>
+        </script>-->
     </head>
     <body ontouchstart="" id="cklaptopvn-laptop">
         <div class="bg_mmenu">
@@ -188,94 +119,16 @@
                             'theme_location' => 'main-menu'
                         ))
                         ?>
-                        <!--                                                <ul class="menu__list hidden-xs">
-                                                
-                                                
-                                                                            <li class="menu__item"><a href="/" class="menu__link">Trang chủ</a></li>
-                                                
-                                                
-                                                
-                                                                            <li class="menu__item"><a href="/gioi-thieu" class="menu__link">Giới thiệu</a></li>
-                                                
-                                                
-                                                
-                                                                            <li class="menu__item">
-                                                                                <a href="/danh-muc-laptop" class="menu__link">Danh mục Laptop <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                                                                <ul class="menu-sub">
-                                                
-                                                                                    <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Laptop Dell</a></li>
-                                                
-                                                
-                                                
-                                                                                    <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Laptop Asus</a></li>
-                                                
-                                                
-                                                
-                                                                                    <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Laptop HP</a></li>
-                                                
-                                                
-                                                
-                                                                                    <li class="menu-sub__item"><a href="/laptop-lenovo" class="menu-sub__link">Laptop Lenovo</a></li>
-                                                
-                                                
-                                                
-                                                                                    <li class="menu-sub__item"><a href="/laptop-acer" class="menu-sub__link">Laptop Acer</a></li>
-                                                
-                                                
-                                                
-                                                                                    <li class="menu-sub__item"><a href="/laptop-toshiba" class="menu-sub__link">Laptop Toshiba</a></li>
-                                                
-                                                
-                                                                                </ul>
-                                                                            </li>
-                                                
-                                                
-                                                
-                                                                            <li class="menu__item"><a href="/laptop-game-do-hoa" class="menu__link">Laptop Game & Đồ Họa</a></li>
-                                                
-                                                
-                                                
-                                                                            <li class="menu__item"><a href="/macbook" class="menu__link">Macbook</a></li>
-                                                
-                                                
-                                                
-                                                                            <li class="menu__item"><a href="/linh-kien-laptop" class="menu__link">Linh Kiện - Thiết bị <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                                                                <ul class="menu-sub">
-                                                                                    <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Linh Kiện máy tính <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                                                                        <ul class="menu-sub">
-                                                                                            <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Loa máy tính</a></li>
-                                                                                            <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Chuột</a></li>
-                                                                                            <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Các thiết bị tản nhiệt</a></li>
-                                                                                            <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Các thiết bị lưu trữ</a></li>
-                                                                                        </ul>
-                                                                                    </li>
-                                                                                    <li class="menu-sub__item"><a href="/laptop-asus" class="menu-sub__link">Camera an ninh</a></li>
-                                                                                    <li class="menu-sub__item"><a href="/laptop-hp" class="menu-sub__link">Thiết bị mạng</a></li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li class="menu__item"><a href="/tin-tuc" class="menu__link">Tin tức</a></li>
-                                                                            <li class="menu__item"><a href="/lien-he" class="menu__link">Liên hệ</a></li>
-                                                                        </ul>-->
                     </div>
                 </nav>
                 <div class="hidden">
                     <nav id="menu">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="/" class="menu__link">Trang chủ</a></li>
-
-
-
                             <li class="menu__item"><a href="/gioi-thieu" class="menu__link">Giới thiệu</a></li>
-
-
-
                             <li class="menu__item">
                                 <a href="/danh-muc-laptop" class="menu__link">Danh mục Laptop</a>
                                 <ul class="menu-sub">
-
-
-
-
 
                                     <li class="menu-sub__item"><a href="/laptop-dell" class="menu-sub__link">Laptop Dell</a></li>
 

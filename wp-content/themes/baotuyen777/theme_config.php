@@ -9,5 +9,7 @@ define('PAGE_CONTACT', 12);
 
 define('CAT_NEWS', 1);
 define('CAT_LAPTOP', 4);
+define('CAT_LAPTOPGAME', 11);
+define('CAT_MACBOOK', 12);
 
 define('NO_IMAGE', '/img/noimagefound.jpg');

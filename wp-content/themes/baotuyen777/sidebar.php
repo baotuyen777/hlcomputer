@@ -3,7 +3,14 @@
         <h2><i class="fa fa-bars" aria-hidden="true"></i> Danh mục sản phẩm</h2>
     </div>
     <div class="catalog__bg">
-        <ul class="catalog__list">
+        <?php
+        wp_nav_menu(array(
+            'menu_class' => 'catalog__list',
+            'container' => 'ul',
+            'theme_location' => 'sidebar-menu'
+        ))
+        ?>
+<!--        <ul class="catalog__list">
             <li class="catalog__item" >
                 <a href="/laptop-game-do-hoa" title="Laptop Game & Đồ Họa">
 
@@ -117,9 +124,9 @@
 
 
                 </ul>
-            </li>
+            </li>-->
 
-            <script type="text/javascript">
+<!--            <script type="text/javascript">
                 $(document).ready(function () {
                     $('.catalog-more').on('click', function () {
                         var $this = $(this);
@@ -143,7 +150,7 @@
                         $('.catalog__list').css('overflow', 'overlay');
                     });
                 });
-            </script>
+            </script>-->
         </ul>
     </div>
 </div>
