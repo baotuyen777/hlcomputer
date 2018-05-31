@@ -89,9 +89,16 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-5 col-xs-12 header__search hidden-xs">
-                                <form action="/search" method="get">
+<!--                                <form action="<?php echo get_site_url() ?>" method="get">
+                                    <label for="search">Search in <?php echo home_url('/'); ?></label>
+                                    <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
+                                    <input type="image" alt="Search" src="<?php bloginfo('template_url'); ?>/images/search.png" />
+                                </form>-->
+                                <form action="<?php echo get_site_url() ?>" method="get">
                                     <label class="hidden" for="header-search">Tìm kiếm</label>
-                                    <input type="text" placeholder="Nhập nội dung tìm kiếm" id="header-search" value="" maxlength="70" class="input" name="query">
+                                    <input type="text" placeholder="Nhập nội dung tìm kiếm" id="header-search" 
+                                           value="<?php echo isset($_GET['s']) ? $_GET['s'] : "" ?>" maxlength="70" class="input" name="s">
+                                    <input type="hidden" name="post_type" value="product" />
                                     <button class="button" type="submit" aria-label="Tìm kiếm">Tìm kiếm</button>
                                 </form>
                                 <ul class="header__search--suggest hidden-sm hidden-xs">

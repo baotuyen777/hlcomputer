@@ -137,6 +137,7 @@ jQuery(document).ready(function () {
         e.preventDefault();
         $('#QuickView').remove();
         var handle = $(this).data('handle');
+        console.log(1111);
         $.ajax({
             url: '/products/' + handle + '?view=quickview',
             success: function (data) {
@@ -261,3 +262,7 @@ jQuery(document).ready(function () {
 //    e.preventDefault();
 //    alert('Chức năng này đang phát triển');
 //})
+//jQuery('.quick-view').on('click', function () {
+//    console.log(11);
+//    $("#QuickView").modal('show');
+//});

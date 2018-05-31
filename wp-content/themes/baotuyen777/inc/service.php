@@ -62,3 +62,31 @@ function qsoft_get_all_post() {
 add_action('wp_ajax_nopriv_get_post', 'qsoft_get_all_post');
 add_action('wp_ajax_get_post', 'qsoft_get_all_post');
 
+function qsoft_quick_product() {
+    global $wpdb;
+  
+    $data = $wpdb->get_results(
+            $wpdb->prepare("SELECT * FROM wp_posts where post_type='product'  "
+                    . "and post_status='publish' "
+                    . "limit %d, %d ", $start, $postPerPage));
+    $result = array();
+    $image=  get_template_directory_uri().'/images/noimage.jpg';
+    foreach ($data as $object) {
+        $object->link = get_permalink($object->ID);
+        if (get_post_thumbnail_id($object->ID)) {
+            $src = wp_get_attachment_image_src(get_post_thumbnail_id($object->ID), 'product-slide-active');
+            $image=$src[0];
+        }
+        $object->image = $image;
+        $result[] = $object;
+    }
+
+//    var_dump($data);
+    header('Content-Type: application/json');
+    echo json_encode($result);
+    exit();
+}
+
+add_action('wp_ajax_nopriv_get_post', 'qsoft_quick_product');
+add_action('wp_ajax_get_post', 'qsoft_quick_product');
+

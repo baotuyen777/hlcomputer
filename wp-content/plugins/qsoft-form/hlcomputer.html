@@ -1,0 +1,21 @@
+<fieldset>
+    <div class="customer-name">
+        <div class="input-box">
+            <label class="hidden" for="name">Họ tên</label>
+            <input type="text" size="35" required="" id="name" class="input-text" placeholder="Họ tên" value="" 
+                   name="qform[name]">
+        </div>
+        <div class="input-box">        
+            <label class="hidden" for="email">Email</label>
+            <input type="email" size="35" required="" id="email" placeholder="Email" value="" class="input-text"
+                   name="qform[email]">
+        </div>
+    </div>
+    <div style="float:none" class="">
+        <label class="hidden" for="comment">Nội dung</label>
+        <textarea name="qform[message]" required="" id="comment" title="Nội dung" placeholder="Nội dung" class="input-text" cols="150" rows="3"></textarea>                        
+    </div>
+</fieldset>
+<div class="buttons-set">
+    <button type="submit" title="Submit" class="button submit" aria-label="Gửi"  name="qform_submit" > <span> Gửi </span> </button>
+</div>
